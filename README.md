@@ -47,10 +47,8 @@ Os exercícios estão na pasta [`exercicios/`](exercicios/) e devem ser feitos a
 
 ## 📦 Como este material será usado nas disciplinas
 
-1. Cada aluno terá **um repositório no GitHub por disciplina** (JavaScript e Java);
+1. Cada aluno terá **um repositório no GitHub por disciplina**;
 2. Os programas de exemplo e exercícios de cada aula devem ser **commitados e enviados** (`push`) para o repositório;
-3. O **histórico de commits** faz parte da avaliação: commits frequentes e com boas mensagens demonstram trabalho contínuo;
-4. A estrutura esperada dos repositórios está descrita no [Exercício 05](exercicios/exercicio-05.md).
 
 ## ❓ Dúvidas
 
