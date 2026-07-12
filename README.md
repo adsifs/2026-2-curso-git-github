@@ -1,7 +1,6 @@
 # 📚 Curso de Git e GitHub
 
-> Material de apoio para as disciplinas de **JavaScript** e **Java (Orientação a Objetos)**.
-> Público-alvo: alunos do 2º semestre, sem contato prévio com Git ou GitHub.
+> Material de apoio para alunos que desejam aprender Git e GitHub — do básico ao avançado, com exemplos práticos.
 
 ## 🎯 Objetivo
 
