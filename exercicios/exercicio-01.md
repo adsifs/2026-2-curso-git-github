@@ -14,7 +14,7 @@
 
    - **Nome:** Seu Nome
    - **Curso:** Seu Curso
-   - **Semestre:** 2º
+   - **Semestre:** Semestre referente ao seu curso (Primeiro Semestre, Segundo Semestre, ...)
    ```
 
 3. Faça o **primeiro commit** com a mensagem `"Adiciona apresentação inicial"`;
