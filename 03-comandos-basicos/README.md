@@ -162,14 +162,18 @@ git add index.js
 git commit -m "Adiciona segunda mensagem no programa"
 ```
 
-```
-┌──────────────┐   edita   ┌──────────────┐  git add  ┌──────────────┐ git commit┌──────────────┐
-│   arquivo    │──────────▶│  modified    │──────────▶│    staged    │──────────▶│  commitado   │
-│ (sem mudança)│           │ (modificado) │           │  (no palco)  │           │  (no álbum)  │
-└──────────────┘           └──────────────┘           └──────────────┘           └──────────────┘
-       ▲                                                                                │
-       └────────────────────────────────────────────────────────────────────────────────┘
-                                    e o ciclo recomeça...
+```mermaid
+stateDiagram-v2
+    direction LR
+    semMudanca: arquivo sem mudança
+    modified: modified (modificado)
+    staged: staged (no palco)
+    commitado: commitado (no álbum)
+
+    semMudanca --> modified: você edita
+    modified --> staged: git add
+    staged --> commitado: git commit
+    commitado --> semMudanca: e o ciclo recomeça
 ```
 
 ## 3.8 `git log` — vendo o histórico

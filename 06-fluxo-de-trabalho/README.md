@@ -35,13 +35,16 @@ Para criar: na página do repositório, botão **Fork** (canto superior direito)
 
 Resultado: `github.com/professor/projeto` → **`github.com/VOCE/projeto`** (seu fork).
 
-```
-   REPOSITÓRIO ORIGINAL                     SEU FORK                       SUA MÁQUINA
-  github.com/professor/projeto    fork    github.com/voce/projeto   clone   pasta local
-  ┌──────────────────────┐   ─────────▶  ┌─────────────────────┐  ──────▶  ┌───────────┐
-  │  (sem permissão       │              │  (controle total)     │          │           │
-  │   de escrita)         │  ◀─────────  │                      │  ◀──────  │           │
-  └──────────────────────┘ Pull Request └─────────────────────┘   push     └───────────┘
+```mermaid
+flowchart LR
+    ORIG["<b>REPOSITÓRIO ORIGINAL</b><br>github.com/professor/projeto<br><i>você não tem permissão de escrita</i>"]
+    FORK["<b>SEU FORK</b><br>github.com/voce/projeto<br><i>controle total</i>"]
+    LOCAL["<b>SUA MÁQUINA</b><br>pasta local"]
+
+    ORIG -->|fork| FORK
+    FORK -->|clone| LOCAL
+    LOCAL -->|push| FORK
+    FORK -->|Pull Request| ORIG
 ```
 
 ## 6.4 Pull Request — propondo suas mudanças

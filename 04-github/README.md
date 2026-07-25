@@ -7,15 +7,16 @@ Até agora, tudo estava só na sua máquina. Neste módulo, seus repositórios g
 
 ## 4.1 Repositório local × repositório remoto
 
-```
-        SUA MÁQUINA                              GITHUB (nuvem)
-┌─────────────────────────┐              ┌─────────────────────────┐
-│   Repositório LOCAL     │   git push   │   Repositório REMOTO    │
-│                         │─────────────▶│                         │
-│   (pasta ola-git com    │              │   (github.com/voce/     │
-│    a pasta .git)        │◀─────────────│    ola-git)             │
-│                         │   git pull   │                         │
-└─────────────────────────┘              └─────────────────────────┘
+```mermaid
+flowchart LR
+    subgraph MAQ["SUA MÁQUINA"]
+        L["<b>Repositório LOCAL</b><br>pasta ola-git,<br>com a pasta .git"]
+    end
+    subgraph NUVEM["GITHUB (nuvem)"]
+        R["<b>Repositório REMOTO</b><br>github.com/voce/ola-git"]
+    end
+    L -->|git push| R
+    R -->|git pull| L
 ```
 
 - **`push`** = empurrar seus commits para o remoto (subir);

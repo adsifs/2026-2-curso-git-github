@@ -53,16 +53,13 @@ Características importantes:
 
 Este é **o conceito mais importante do curso**. No Git, um arquivo passa por três áreas:
 
-```
-┌─────────────────┐      ┌─────────────────┐      ┌─────────────────┐
-│    Diretório    │      │  Área de Stage  │      │   Repositório   │
-│   de Trabalho   │      │   (Staging)     │      │    (.git)       │
-│                 │      │                 │      │                 │
-│  Onde você      │─────▶│  Arquivos       │─────▶│  Histórico      │
-│  edita os       │ add  │  selecionados   │commit│  permanente     │
-│  arquivos       │      │  p/ o próximo   │      │  de versões     │
-│                 │      │  commit         │      │                 │
-└─────────────────┘      └─────────────────┘      └─────────────────┘
+```mermaid
+flowchart LR
+    WD["<b>Diretório de Trabalho</b><br>onde você edita os arquivos"]
+    ST["<b>Área de Stage</b><br>arquivos selecionados<br>para o próximo commit"]
+    RE["<b>Repositório (.git)</b><br>histórico permanente<br>de versões"]
+    WD -->|git add| ST
+    ST -->|git commit| RE
 ```
 
 1. **Diretório de trabalho** (*working directory*): a pasta do projeto, onde você cria e edita arquivos normalmente;

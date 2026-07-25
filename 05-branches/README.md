@@ -7,16 +7,26 @@
 
 Até agora, seu histórico é uma linha reta de commits no branch **`main`**:
 
-```
-main:  A ──▶ B ──▶ C
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
 ```
 
 Um **branch** (ramo) é uma **linha de desenvolvimento paralela**. Ele permite experimentar, desenvolver uma funcionalidade ou corrigir um bug **sem mexer na versão que funciona**:
 
-```
-main:     A ──▶ B ──▶ C ─────────▶ F (merge)
-                       \         /
-nova-funcao:            D ──▶ E
+```mermaid
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    branch nova-funcao
+    checkout nova-funcao
+    commit id: "D"
+    commit id: "E"
+    checkout main
+    merge nova-funcao id: "F"
 ```
 
 > 💡 **Analogia:** o `main` é o **caderno passado a limpo**; um branch é uma **folha de rascunho**. Você experimenta à vontade no rascunho e, quando o resultado fica bom, passa a limpo (faz o *merge*). Se ficar ruim, joga o rascunho fora — o caderno continua intacto.
