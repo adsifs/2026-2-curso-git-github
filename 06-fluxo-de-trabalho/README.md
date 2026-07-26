@@ -2,7 +2,7 @@
 
 > ⏱️ Duração estimada: 45 minutos
 > 📋 Pré-requisitos: [Módulo 5](../05-branches/README.md)
-> 🎬 Slides da aula: [apresentacao-06-fluxo-de-trabalho.pdf](apresentacao-06-fluxo-de-trabalho.pdf)
+> 🎬 Slides da aula: [apresentacao-06-fluxo-de-trabalho.pdf](apresentacao/apresentacao-06-fluxo-de-trabalho.pdf)
 
 Este módulo apresenta os recursos de **colaboração** do GitHub: como contribuir com repositórios de outras pessoas e como equipes trabalham juntas. É assim que funciona o open source — e a maioria das empresas.
 

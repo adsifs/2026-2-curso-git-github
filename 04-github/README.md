@@ -2,7 +2,7 @@
 
 > ⏱️ Duração estimada: 1 hora
 > 📋 Pré-requisitos: [Módulo 3](../03-comandos-basicos/README.md) e conta no GitHub configurada ([Módulo 2](../02-instalacao-config/README.md))
-> 🎬 Slides da aula: [apresentacao-04-github.pdf](apresentacao-04-github.pdf)
+> 🎬 Slides da aula: [apresentacao-04-github.pdf](apresentacao/apresentacao-04-github.pdf)
 
 Até agora, tudo estava só na sua máquina. Neste módulo, seus repositórios ganham uma cópia na nuvem: backup, portfólio e porta para colaboração.
 

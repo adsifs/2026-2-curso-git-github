@@ -2,7 +2,7 @@
 
 > ⏱️ Duração estimada: 30 minutos
 > 📋 Pré-requisitos: [Módulo 6](../06-fluxo-de-trabalho/README.md)
-> 🎬 Slides da aula: [apresentacao-07-boas-praticas.pdf](apresentacao-07-boas-praticas.pdf)
+> 🎬 Slides da aula: [apresentacao-07-boas-praticas.pdf](apresentacao/apresentacao-07-boas-praticas.pdf)
 
 Saber os comandos é metade do caminho. A outra metade é usá-los **bem** — e é isso que diferencia um repositório profissional de um amontoado de arquivos.
 
