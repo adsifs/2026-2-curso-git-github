@@ -2,6 +2,7 @@
 
 > ⏱️ Duração estimada: 1 hora
 > 📋 Pré-requisitos: [Módulo 4](../04-github/README.md)
+> 🎬 Slides da aula: [apresentacao-05-branches.pdf](apresentacao-05-branches.pdf)
 
 ## 5.1 O que é um branch?
 

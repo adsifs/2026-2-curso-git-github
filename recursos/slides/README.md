@@ -32,6 +32,22 @@ O script compara datas: só regera o que mudou, e regera todos os decks quando o
 > { "markdown.marp.themes": ["./recursos/slides/trilha.css"] }
 > ```
 
+## Conferir se algum slide estourou
+
+```bash
+python3 recursos/slides/conferir.py            # todos os decks
+python3 recursos/slides/conferir.py 06-fluxo   # só um
+```
+
+**O Marp não avisa quando o conteúdo passa do slide** — ele simplesmente deixa o texto atravessar o rodapé, e o defeito só aparece olhando o PDF. Este script estima a altura de cada slide a partir das métricas do `trilha.css` e marca:
+
+- ❌ acima de 102% da área útil — quase certamente estourando;
+- ⚠️ acima de 92% — no limite, vale abrir o PNG e olhar.
+
+É estimativa, não medição: aponta onde olhar, não substitui a conferida visual. Rode antes de fechar cada deck.
+
+> 💡 Regra de bolso que sai das métricas: um bloco de código sozinho com o título cabe até **~11 linhas**; uma tabela de 2 colunas, até **~8 linhas**. Passou disso, divida em dois slides.
+
 ## Escrever um deck
 
 `---` separa slides. O cabeçalho vai só no começo do arquivo:

@@ -1,0 +1,26 @@
+---
+config:
+  theme: base
+  # fontFamily precisa ser chave de topo — dentro de themeVariables é ignorada
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    git0: "#f05033"
+    git1: "#336791"
+    gitBranchLabel0: "#ffffff"
+    gitBranchLabel1: "#ffffff"
+    commitLabelColor: "#1a1a1a"
+    commitLabelBackground: "#fdfdfb"
+    commitLabelFontSize: "20px"
+  gitGraph:
+    rotateCommitLabel: false
+---
+gitGraph
+    commit id: "A"
+    commit id: "B"
+    commit id: "C"
+    branch nova-funcao
+    checkout nova-funcao
+    commit id: "D"
+    commit id: "E"
+    checkout main
+    merge nova-funcao id: "F"

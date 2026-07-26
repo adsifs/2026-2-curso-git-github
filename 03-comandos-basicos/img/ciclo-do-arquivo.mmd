@@ -1,0 +1,25 @@
+---
+config:
+  theme: base
+  # fontFamily precisa ser chave de topo — dentro de themeVariables é ignorada
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 24px
+    lineColor: "#f05033"
+    primaryColor: "#fdeeeb"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#f05033"
+    edgeLabelBackground: "#fdfdfb"
+---
+stateDiagram-v2
+    direction LR
+
+    limpo: sem mudança<br>igual ao commit
+    modificado: <b>modified</b><br>editado
+    palco: <b>staged</b><br>no palco
+    album: <b>commitado</b><br>no álbum
+
+    limpo --> modificado: você edita
+    modificado --> palco: <b>git add</b>
+    palco --> album: <b>git commit</b>
+    album --> limpo: o ciclo recomeça

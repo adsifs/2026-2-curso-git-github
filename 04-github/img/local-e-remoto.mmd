@@ -1,0 +1,35 @@
+---
+config:
+  theme: base
+  # fontFamily precisa ser chave de topo — dentro de themeVariables é ignorada
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 23px
+    lineColor: "#f05033"
+    primaryColor: "#fdeeeb"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#f05033"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 60
+    padding: 22
+---
+flowchart LR
+    subgraph MAQ["SUA MÁQUINA"]
+        L["<b>Repositório LOCAL</b><br><br>a pasta ola-git,<br>com a pasta .git dentro"]
+    end
+
+    subgraph NUVEM["GITHUB — a nuvem"]
+        R["<b>Repositório REMOTO</b><br><br>github.com/voce/<br>ola-git"]
+    end
+
+    L -->|"<b>git push</b>&nbsp;"| R
+    R -->|"&nbsp;<b>git pull</b>"| L
+
+    classDef caixa fill:#fdeeeb,stroke:#f05033,stroke-width:4px,color:#1a1a1a
+    class L,R caixa
+
+    style MAQ fill:#f6f4ef,stroke:#c9c4b8,stroke-width:2px,color:#5c5c5c
+    style NUVEM fill:#f6f4ef,stroke:#c9c4b8,stroke-width:2px,color:#5c5c5c
+
+    linkStyle 0,1 stroke:#f05033,stroke-width:3.5px

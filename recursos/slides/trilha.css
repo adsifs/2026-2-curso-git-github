@@ -186,6 +186,31 @@ pre > code .hljs-section { color: #ddd9a0; }
 pre > code .hljs-variable,
 pre > code .hljs-template-variable { color: #9cdcfe; }
 
+/*
+ * Blocos ```diff — a aula fala em "linha vermelha" e "linha verde".
+ * O `background` é obrigatório: o CSS do GitHub pinta .hljs-deletion e
+ * .hljs-addition com fundo CLARO, pensado para bloco de código claro.
+ * Dentro do nosso bloco escuro isso deixa a linha ilegível.
+ */
+pre > code .hljs-deletion {
+  color: #f2836f;
+  background: rgba(242, 131, 111, 0.13);
+  display: inline-block;
+  width: 100%;
+}
+
+pre > code .hljs-addition {
+  color: #9ad17f;
+  background: rgba(154, 209, 127, 0.13);
+  display: inline-block;
+  width: 100%;
+}
+
+pre > code .hljs-meta {
+  color: #8f8f8f;
+  background: transparent;
+}
+
 /* ---------- Callouts (blockquote) ---------- */
 
 blockquote {

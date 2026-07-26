@@ -2,6 +2,7 @@
 
 > ⏱️ Duração estimada: 1 hora
 > 📋 Pré-requisitos: [Módulo 2](../02-instalacao-config/README.md)
+> 🎬 Slides da aula: [apresentacao-03-comandos-basicos.pdf](apresentacao-03-comandos-basicos.pdf)
 
 Neste módulo, tudo acontece **na sua máquina** — nada de GitHub ainda. Vamos criar um repositório do zero e aprender o ciclo fundamental do Git.
 
