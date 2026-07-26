@@ -2,6 +2,7 @@
 
 > ⏱️ Duração estimada: 40 minutos
 > 📋 Pré-requisitos: [Módulo 1](../01-conceitos/README.md)
+> 🎬 Slides da aula: [apresentacao-02-instalacao-config.pdf](apresentacao-02-instalacao-config.pdf)
 
 ## 2.1 Instalando o Git
 

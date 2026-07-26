@@ -1,0 +1,30 @@
+---
+config:
+  theme: base
+  # fontFamily precisa ser chave de topo — dentro de themeVariables é ignorada
+  fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif"
+  themeVariables:
+    fontSize: 24px
+    lineColor: "#f05033"
+    primaryColor: "#fdeeeb"
+    primaryTextColor: "#1a1a1a"
+    primaryBorderColor: "#f05033"
+    edgeLabelBackground: "#fdfdfb"
+  flowchart:
+    nodeSpacing: 80
+    padding: 24
+---
+flowchart LR
+    WD["<b>Diretório de Trabalho</b><br><br>onde você edita"]
+    ST["<b>Área de Stage</b><br><br>o que entra<br>na próxima foto"]
+    RE["<b>Repositório .git</b><br><br>histórico<br>permanente"]
+
+    WD -->|"<b>git add</b>"| ST
+    ST -->|"<b>git commit</b>"| RE
+
+    classDef caixa fill:#fdeeeb,stroke:#f05033,stroke-width:4px,color:#1a1a1a
+    classDef final fill:#f05033,stroke:#c93d24,stroke-width:4px,color:#ffffff
+    class WD,ST caixa
+    class RE final
+
+    linkStyle 0,1 stroke:#f05033,stroke-width:3.5px

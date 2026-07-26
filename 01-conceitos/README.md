@@ -2,6 +2,7 @@
 
 > ⏱️ Duração estimada: 30 minutos
 > 📋 Pré-requisitos: nenhum
+> 🎬 Slides da aula: [apresentacao-01-conceitos.pdf](apresentacao-01-conceitos.pdf)
 
 ## 1.1 O problema: a vida sem controle de versão
 

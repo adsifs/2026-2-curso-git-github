@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Editores
+.vscode/*
+# exceção: aponta o tema Marp para o preview do VS Code
+!.vscode/settings.json
+.idea/
+*.swp
+
+# Configuração local de ferramentas (não versionada)
+.claude/settings.local.json
+
+# Temporários da geração de slides
+.marp-tmp/
+*.local.*
