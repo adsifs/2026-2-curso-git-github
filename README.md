@@ -4,6 +4,8 @@
 
 ## 🎯 Objetivo
 
+teste
+
 Ao final deste curso, você será capaz de:
 
 - Entender **o que é controle de versão** e por que ele é essencial;
